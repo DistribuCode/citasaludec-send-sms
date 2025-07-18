@@ -7,7 +7,7 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o send-sms ./cmd/main.go
+RUN go build -o send-sms ./cmd/main.go && ls -l
 
 EXPOSE 5000
 
